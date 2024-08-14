@@ -4,28 +4,29 @@
 ### CSS: Nikhil, Parv and Kanan
 ### Javascript: Pratham and Parthiv
 
-header
-header class="header" id="header"
+### Header
+header:- class="header" id="header"
 
-main body
-section class="Main-block" id="Main-block"
-div id="Decimal-Binary" class="Decimal-Binary"
-div id="Decimal-Hexadecimal" class="Decimal-Hexadecimal"
-div id="Decimal-Octal" class="Decimal-Octal"
-div id="Binary-Hexadecimal" class="Binary-Hexadecimal"
-div id="Binary-Octal" class="Binary-Octal"
-div id="Octal-Hexadecimal" class="Octal-Hexadecimal"
+### Body
+#### main body section
+section:- class="Main-block" id="Main-block" <br><br>
+div:- id="Decimal-Binary" class="Decimal-Binary" <br>
+div:- id="Decimal-Hexadecimal" class="Decimal-Hexadecimal" <br>
+div:- id="Decimal-Octal" class="Decimal-Octal" <br>
+div:- id="Binary-Hexadecimal" class="Binary-Hexadecimal" <br>
+div:- id="Binary-Octal" class="Binary-Octal" <br>
+div:- id="Octal-Hexadecimal" class="Octal-Hexadecimal" <br>
 
-section
-section class="aboutus" id="aboutus"
-div class="parv" id="parv"
-div class="nikhil" id="nikhil"
-div class="vedant" id="vedant"
-div class="kanan" id="kanan"
-div class="heva" id="heva"
-div class="pratham" id="pratham"
-div class="parthiv" id="parthiv"
+#### section for about us
+section:- class="aboutus" id="aboutus" <br><br>
+div:- class="parv" id="parv"<br>
+div:- class="nikhil" id="nikhil"<br>
+div:- class="vedant" id="vedant"<br>
+div:- class="kanan" id="kanan"<br>
+div:- class="heva" id="heva"<br>
+div:- class="pratham" id="pratham"<br>
+div:- class="parthiv" id="parthiv"<br>
 
-footer
-footer class="footer" id="footer"
-p id="para" id="para"
+### Footer
+footer:- class="footer" id="footer"<br>
+p:- id="para" id="para"
