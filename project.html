@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="">
   <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
     href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
@@ -16,26 +16,27 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <i class="fa-solid fa-calculator"></i><br><br>
+  <header class="header" id="header">
+      <i class="fa-solid fa-calculator"></i><br>
+     <h1>Digital Converter</h1>
       <button onclick=""><i class="fa-regular fa-moon"></i></button>
-      <h1>Digital Converter</h1>
-      <h2>Home</h2>
-      <button onclick="">
-        <div id="menu"><i class="fa-solid fa-bars"></i></div>
-      </button><br>
-      <a href="#">Decimal-Binary</a><br>
-      <a href="#">Decimal-Hexadecimal</a><br>
-      <a href="#">Decimal-Octal</a><br>
-      <a href="#">Binary-Hexadecimal</a><br>
-      <a href="#">Binary-Octal</a><br>
-      <a href="#">Octal-Hexadecimal</a><br><br>
-      <div id="color-variance"><input type="button" value="color-variance" onclick=""></div><br>
-    </nav>
+      <div class="menu" id="menu">
+        <button onclick="">
+          <i class="fa-solid fa-bars"></i>
+        </button><br>
+        <a href="#">home</a><br>
+        <a href="#Decimal-Binary">Decimal-Binary</a><br>
+        <a href="#Decimal-Hexadecimal">Decimal-Hexadecimal</a><br>
+        <a href="#Decimal-Octal">Decimal-Octal</a><br>
+        <a href="#Binary-Hexadecimal">Binary-Hexadecimal</a><br>
+        <a href="#Binary-Octal">Binary-Octal</a><br>
+        <a href="#Octal-Hexadecimal">Octal-Hexadecimal</a><br>
+        <a href="#aboutus">about us</a>
+
+      </div>
   </header><br><br>
-  <section class="Main-block">
-    <div id="sub1">
+  <section class="Main-block" id="Main-block">
+    <div id="Decimal-Binary" class="Decimal-Binary">
       <label for="Dec">Decimal:</label>
       <input type="text" name="Dec" id="Dec-Bin" value=""><br><br>
       <input type="button" value="Convert" onclick=""><br><br>
@@ -44,7 +45,7 @@
       <input type="text" name="Bin" id="Dec-Bin1" value=""><br><br>
       <hr>
     </div>
-    <div id="sub2">
+    <div id="Decimal-Hexadecimal" class="Decimal-Hexadecimal">
       <label for="Dec1">Decimal:</label>
       <input type="text" name="Dec1" id="Dec-hex" value=""><br><br>
       <input type="button" value="Convert" onclick=""><br><br>
@@ -53,7 +54,7 @@
       <input type="text" name="Hex" id="Dec-hex1" value=""><br><br>
       <hr>
     </div>
-    <div id="sub3">
+    <div id="Decimal-Octal" class="Decimal-Octal">
       <label for="Dec2">Decimal:</label>
       <input type="text" name="Dec2" id="Dec-oct" value=""><br><br>
       <input type="button" value="Convert" onclick=""><br><br>
@@ -62,7 +63,7 @@
       <input type="text" name="Oct" id="Dec-oct1" value=""><br><br>
       <hr>
     </div>
-    <div id="sub4">
+    <div id="Binary-Hexadecimal" class="Binary-Hexadecimal">
       <label for="Bin1">Binary:</label>
       <input type="text" name="Bin1" id="Bin-hex" value=""><br><br>
       <input type="button" value="Convert" onclick=""><br><br>
@@ -71,7 +72,7 @@
       <input type="text" name="Hex1" id="Bin-hex1" value=""><br><br>
       <hr>
     </div>
-    <div id="sub5">
+    <div id="Binary-Octal" class="Binary-Octal">
       <label for="Bin2">Binary:</label>
       <input type="text" name="Bin2" id="Bin-oct" value=""><br><br>
       <input type="button" value="Convert" onclick=""><br><br>
@@ -80,7 +81,7 @@
       <input type="text" name="Oct1" id="Bin-oct1" value=""><br><br>
       <hr>
     </div>
-    <div id="sub6">
+    <div id="Octal-Hexadecimal" class="Octal-Hexadecimal">
       <label for="Oct2">Octal:</label>
       <input type="text" name="Oct2" id="oct-hex" value=""><br><br>
       <input type="button" value="Convert" onclick=""><br><br>
@@ -89,22 +90,69 @@
       <input type="text" name="Hex2" id="oct-hex1" value="">
     </div>
   </section>
-  <footer class="foot-block">
-    <h1>All fields of converter projects</h1>
-    <ul id="link">
-      <a href="https:/twitter.com" target="_blank">
-        <li><i class="fa-brands fa-x-twitter"></i></li>
+  <section class="aboutus" id="aboutus">
+     <h1>about us</h1>
+     <h2>Parv</h2>
+      <div class="parv" id="parv">
+        <a href="https://github.com/parv811" target="_blank">
+          <li><i class="fa-brands fa-square-github">github</i></li>
+        </a>
+        <a href=" https://www.linkedin.com/in/parv-shah-3b97081aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+        " target="_blank">
+          <li><i class="fa-brands fa-linkedin">linkedin</i></li>
+        </a>
+        <a href="https://www.instagram.com/parvshah85?igsh=bDR3cG1raWZzeGhy&utm_source=qr " target="_blank">
+        <li><i class="fa-brands fa-square-instagram">instagram</i></li>
       </a>
-      <a href="https://www.facebook.com" target="_blank">
-        <li><i class="fa-brands fa-facebook"></i></li>
-      </a>
-      <a href="https://www.instagram.com" target="_blank">
-        <li><i class="fa-brands fa-square-instagram"></i></li>
-      </a>
-      <a href="https://www.gmail.com" target="_blank">
-        <li><i class="fa-solid fa-envelope"></i></li>
-      </a>
-      <p id="para">copyright@2024 www.converter.com All rights reserved.</p>
+      </div>
+
+      <div class="nikhil" id="nikhil">
+        <h2>Nikhil</h2>
+        <a href="https://github.com/Nkhambhaliya" target="_blank">
+          <li><i class="fa-brands fa-square-github">github</i></li>
+        </a>
+        <a href=" https://www.linkedin.com/in/nikhil-khambhaliya-3a48a2202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+        " target="_blank">
+          <li><i class="fa-brands fa-linkedin">linkedin</i></li>
+        </a>
+        <a href=" https://www.instagram.com/nikk797edu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== " target="_blank">
+          <li><i class="fa-brands fa-square-instagram">instagram</i></li>
+        </a>
+      </div>
+      
+      <div class="vedant" id="vedant">
+        <h2>Vedant</h2>
+        <a href="https://github.com/Vedantp81" target="_blank">
+          <li><i class="fa-brands fa-square-github">github</i></li>
+        </a>
+      </div>
+      <div class="kanan" id="kanan">
+        <h2>Kanan</h2>
+        <a href="https://github.com/KananThakkar" target="_blank">
+          <li><i class="fa-brands fa-square-github">github</i></li>
+        </a>
+      </div>
+      <div class="heva" id="heva">
+        <h2>Heva</h2>
+        <a href="https://github.com/Hevapatel" target="_blank">
+          <li><i class="fa-brands fa-square-github">github</i></li>
+        </a>
+      </div>
+      <div class="pratham" id="pratham">
+        <h2>Pratham</h2>
+        <a href="https://github.com/PrathamVadhavana" target="_blank">
+          <li><i class="fa-brands fa-square-github">github</i></li>
+        </a>
+      </div>
+      <div class="parthiv" id="parthiv">
+        <h2>Parthiv</h2>
+        <a href="https://github.com/Parthiv49" target="_blank">
+          <li><i class="fa-brands fa-square-github">github</i></li>
+        </a>
+      </div>
+  </section>
+  <footer class="footer" id="footer">
+      <p id="para" id="para">copyright@2024 www.converter.com All rights reserved.</p>
   </footer>
 </body>
 
