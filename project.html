@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,59 +14,83 @@
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
 </head>
+
 <body>
   <header>
-    <i class="fa-solid fa-calculator"></i>
-    <h1>Digital Converter</h1>
-  </header>
-  <div id="menu"><i class="fa-solid fa-bars"></i></div>
-  <ul>
-    <li><button>Decimal-Binary</button></li>
-    <li><button>Decimal-Hexadecimal</button></li>
-    <li><button>Decimal-Octal</button></li>
-    <li><button>Binary-Hexadecimal</button></li>
-    <li><button>Binary-Octal</button></li>
-    <li><button>Octal-Hexadecimal</button></li>
-  </ul>
-  <nav id="main-body">
-    <label for="A">Decimal:</label>
-    <input type="text" name="A" id="A" value=""><br><br>
-    <input type="button" value="converter" onclick=""><br><br>
-    <label for="B">Binary:</label>
-    <input type="text" name="B" id="B" value=""><br><br>
-    <hr>
-    <label for="C">Decimal:</label>
-    <input type="text" name="C" id="C" value=""><br><br>
-    <input type="button" value="converter" onclick=""><br><br>
-    <label for="D">Hexadecimal:</label>
-    <input type="text" name="D" id="D" value=""><br><br>
-    <hr>
-    <label for="E">Decimal:</label>
-    <input type="text" name="E" id="E" value=""><br><br>
-    <input type="button" value="converter" onclick=""><br><br>
-    <label for="F">Octal:</label>
-    <input type="text" name="F" id="F" value=""><br><br>
-    <hr>
-    <label for="I">Binary:</label>
-    <input type="text" name="I" id="I" value=""><br><br>
-    <input type="button" value="converter" onclick=""><br><br>
-    <label for="J">Hexadecimal:</label>
-    <input type="text" name="J" id="J" value=""><br><br>
-    <hr>
-    <label for="K">Binary:</label>
-    <input type="text" name="K" id="K" value=""><br><br>
-    <input type="button" value="converter" onclick=""><br><br>
-    <label for="L">Octal:</label>
-    <input type="text" name="L" id="L" value=""><br><br>
-    <hr>
-    <label for="M">Octal:</label>
-    <input type="text" name="M" id="M" value=""><br><br>
-    <input type="button" value="converter" onclick=""><br><br>
-    <label for="N">Hexadecimal:</label>
-    <input type="text" name="N" id="N" value="">
-  </nav>
-  <footer id="footer">
-    <h1>converter</h1>
+    <nav>
+      <i class="fa-solid fa-calculator"></i><br><br>
+      <button onclick=""><i class="fa-regular fa-moon"></i></button>
+      <h1>Digital Converter</h1>
+      <h2>Home</h2>
+      <button onclick="">
+        <div id="menu"><i class="fa-solid fa-bars"></i></div>
+      </button><br>
+      <a href="#">Decimal-Binary</a><br>
+      <a href="#">Decimal-Hexadecimal</a><br>
+      <a href="#">Decimal-Octal</a><br>
+      <a href="#">Binary-Hexadecimal</a><br>
+      <a href="#">Binary-Octal</a><br>
+      <a href="#">Octal-Hexadecimal</a><br><br>
+      <div id="color-variance"><input type="button" value="color-variance" onclick=""></div><br>
+    </nav>
+  </header><br><br>
+  <section class="Main-block">
+    <div id="sub1">
+      <label for="Dec">Decimal:</label>
+      <input type="text" name="Dec" id="Dec-Bin" value=""><br><br>
+      <input type="button" value="Convert" onclick=""><br><br>
+      <input type="button" value="Clear" onclick=""><br><br>
+      <label for="Bin">Binary:</label>
+      <input type="text" name="Bin" id="Dec-Bin1" value=""><br><br>
+      <hr>
+    </div>
+    <div id="sub2">
+      <label for="Dec1">Decimal:</label>
+      <input type="text" name="Dec1" id="Dec-hex" value=""><br><br>
+      <input type="button" value="Convert" onclick=""><br><br>
+      <input type="button" value="Clear" onclick=""><br><br>
+      <label for="Hex">Hexadecimal:</label>
+      <input type="text" name="Hex" id="Dec-hex1" value=""><br><br>
+      <hr>
+    </div>
+    <div id="sub3">
+      <label for="Dec2">Decimal:</label>
+      <input type="text" name="Dec2" id="Dec-oct" value=""><br><br>
+      <input type="button" value="Convert" onclick=""><br><br>
+      <input type="button" value="Clear" onclick=""><br><br>
+      <label for="Oct">Octal:</label>
+      <input type="text" name="Oct" id="Dec-oct1" value=""><br><br>
+      <hr>
+    </div>
+    <div id="sub4">
+      <label for="Bin1">Binary:</label>
+      <input type="text" name="Bin1" id="Bin-hex" value=""><br><br>
+      <input type="button" value="Convert" onclick=""><br><br>
+      <input type="button" value="Clear" onclick=""><br><br>
+      <label for="Hex1">Hexadecimal:</label>
+      <input type="text" name="Hex1" id="Bin-hex1" value=""><br><br>
+      <hr>
+    </div>
+    <div id="sub5">
+      <label for="Bin2">Binary:</label>
+      <input type="text" name="Bin2" id="Bin-oct" value=""><br><br>
+      <input type="button" value="Convert" onclick=""><br><br>
+      <input type="button" value="Clear" onclick=""><br><br>
+      <label for="Oct1">Octal:</label>
+      <input type="text" name="Oct1" id="Bin-oct1" value=""><br><br>
+      <hr>
+    </div>
+    <div id="sub6">
+      <label for="Oct2">Octal:</label>
+      <input type="text" name="Oct2" id="oct-hex" value=""><br><br>
+      <input type="button" value="Convert" onclick=""><br><br>
+      <input type="button" value="Clear" onclick=""><br><br>
+      <label for="Hex2">Hexadecimal:</label>
+      <input type="text" name="Hex2" id="oct-hex1" value="">
+    </div>
+  </section>
+  <footer class="foot-block">
+    <h1>All fields of converter projects</h1>
     <ul id="link">
       <a href="https:/twitter.com" target="_blank">
         <li><i class="fa-brands fa-x-twitter"></i></li>
@@ -79,14 +104,8 @@
       <a href="https://www.gmail.com" target="_blank">
         <li><i class="fa-solid fa-envelope"></i></li>
       </a>
-    </ul>
-    <ul id="list">
-      <li>Home</li>
-      <li>about</li>
-      <li>contact</li>
-      <li>feedback</li>
-    </ul>
-    <p id="para">copyright@2024 www.converter.com All rights reserved.</p>
+      <p id="para">copyright@2024 www.converter.com All rights reserved.</p>
   </footer>
 </body>
+
 </html>
