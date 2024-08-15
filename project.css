@@ -9,8 +9,12 @@
     --bgcolorwhite: white;
     --bgcolorbluish: lightsteelblue;
     --bgcolorf0f0f0: #f0f0f0;
+    --bgcolorf9f9f9: #f9f9f9;
+    --bgcolor090909: #090909;
     --bordercolorwhite: white;
     --boxshadowcolorblack: rgba(0, 0, 0, 0.3);
+    --boxshadowcolorfadeblack: rgba(0, 0, 0, 0.1);
+    --boxshadowcolorfadewhite: rgba(255, 255, 255, 0.1);
     --boxshadowcolorreddish: rgba(255, 0, 0, 0.1);
 }
 
@@ -132,20 +136,43 @@ header>h1 {
 
 /* CSS for Main-section */
 .Main-block div {
-    height: 300px;
+    height: 180px;
     width: 100vh;
     border-radius: 20px;
-    background-color: var(--bgcolorbluish);
+    background-color: var(--bgcolorf9f9f9);
     padding: 10px;
     margin: 20px;
-    box-shadow: 3px 3px 5px var(--boxshadowcolorblack);
+    box-shadow: 3px 3px 5px var(--boxshadowcolorfadeblack);
 }
 
 .Main-block div:hover {
-    transform: translate(100px, 0);
-    box-shadow: -10px 0 10px var(--boxshadowcolorreddish);
+    box-shadow: 3px 3px 5px var(--boxshadowcolorfadeblack) inset;
 }
 
+.Main-block>div input{
+    color: var(--fontcolorwhite);
+    font-size: 20px;
+    border: 1px solid var(--bgcolorbluish);
+    border-radius: 20px;
+    padding: 4px 8px;
+    background-color: var(--bgcolorbluish);
+    margin-bottom: 30px;
+} 
+.Main-block>div input:nth-child(2){
+    width: 250px;
+}
+.Main-block>div input:last-child{
+    width: 250px;
+}
+.Main-block>div input:hover{
+    color: var(--fontcolorbluish);
+    background-color: var(--bgcolorwhite);
+    border: 1px solid var(--bgcolorbluish);
+}
+.Main-block>div label{
+    color: var(--fontcolorbluish);
+    font-size: 20px;
+}
 /* CSS for About Us section */
 
 .aboutus-panels {

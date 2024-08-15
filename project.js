@@ -29,9 +29,12 @@ themeButton.addEventListener('click',()=>{
         root.style.setProperty('--bgcolorwhite','black');
         root.style.setProperty('--bgcolorbluish','grey');
         root.style.setProperty('--bgcolorf0f0f0','#CBC8C8');
+        root.style.setProperty('--bgcolorf9f9f9','#090909');
         root.style.setProperty('--bordercolorwhite','black');
         root.style.setProperty('--boxshadowcolorreddish','rgba(254, 218, 241, 0.8)');
         root.style.setProperty('--boxshadowcolorblack','rgba(255, 255, 255, 0.3)');
+        root.style.setProperty('--boxshadowcolorfadeblack','rgba(255, 255, 255, 0.1)'); 
+        
         themeButtonState = 1;
     }
     else
@@ -42,9 +45,12 @@ themeButton.addEventListener('click',()=>{
         root.style.setProperty('--bgcolorwhite','white');
         root.style.setProperty('--bgcolorbluish','lightsteelblue');
         root.style.setProperty('--bgcolorf0f0f0','#f0f0f0');
+        root.style.setProperty('--bgcolor090909','#f9f9f9');
         root.style.setProperty('--bordercolorwhite','white');
         root.style.setProperty('--boxshadowcolorreddish','rgba(255, 0, 0, 0.1)');
         root.style.setProperty('--boxshadowcolorblack','rgba(0, 0, 0, 0.3)');
+        root.style.setProperty('--boxshadowcolorfadewhite','rgba(0, 0, 0, 0.1)'); 
+        
         themeButtonState = 0
     }
 })
