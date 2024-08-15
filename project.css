@@ -1,20 +1,44 @@
-/*CSS for header and overall documnet*/
-*{
+/*Global variables for light/dark theme
+  Important Note: If you are adding color, then do decide light and dark version of that color
+  and include it in :root below in form of variables. Only give colors in form of variables...*/
+  
+  :root {
+    --fontcolorblack: black;
+    --fontcolorwhite: white;
+    --fontcolorbluish: lightsteelblue;
+    --bgcolorwhite: white;
+    --bgcolorbluish: lightsteelblue;
+    --bgcolorf0f0f0: #f0f0f0;
+    --bordercolorwhite: white;
+    --boxshadowcolorblack: rgba(0, 0, 0, 0.3);
+    --boxshadowcolorreddish: rgba(255, 0, 0, 0.1);
+}
+
+/*CSS for header and overall document*/
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    min-height: 100vh;
-    background-color: white;
+
+label {
+    color: var(--fontcolorblack);
 }
-nav{
-    background-color: lightsteelblue;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+body {
+    min-height: 100vh;
+    background-color: var(--bgcolorwhite);
+}
+
+nav {
+    background-color: var(--bgcolorbluish);
+    box-shadow: 3px 3px 5px var(--boxshadowcolorblack);
     width: 25%;
 }
-nav ul{
+
+nav ul {
     border-radius: 20px;
     list-style: none;
     position: fixed;
@@ -23,135 +47,153 @@ nav ul{
     height: 50vh;
     width: 250px;
     z-index: 999;
-    background-color: lightsteelblue;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--bgcolorbluish);
+    box-shadow: -10px 0 10px var(--boxshadowcolorblack);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
-nav li{
+
+nav li {
     height: 50px;
     width: 100%;
 }
-nav a{
+
+nav a {
     height: 100%;
     width: 100%;
     padding: 0 30px;
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color: var(--fontcolorblack);
 }
-nav a:hover{
-    background-color: #f0f0f0;
+
+nav a:hover {
+    background-color: var(--bgcolorf0f0f0);
 }
-header{
+
+header {
     top: 0;
     position: fixed;
     width: 100%;
     height: 60px;
-    color: white;
-    background-color: lightsteelblue;
+    color: var(--fontcolorwhite);
+    background-color: var(--bgcolorbluish);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     z-index: 999;
 }
-header>h1{
+
+header>h1 {
     font-size: 30px;
     margin-left: 10px;
     margin-right: 380px;
     font-weight: 100;
 }
-.buttons>button{
+
+.buttons>button {
     margin-left: 10px;
     padding: 1px 3px;
-    color: lightsteelblue;
-    background-color: white;
-    border: 1px solid white;
+    color: var(--fontcolorbluish);
+    background-color: var(--bgcolorwhite);
+    border: 1px solid var(--bordercolorwhite);
     border-radius: 50%;
     height: 40px;
     width: 40px;
 }
-.buttons>button>i{
+
+.buttons>button>i {
     font-size: 20px;
 }
-.buttons>button:hover{
-    color: white;
+
+.buttons>button:hover {
+    color: var(--fontcolorwhite);
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid var(--bordercolorwhite);
     cursor: pointer;
 }
-/* .menu{
+
+.menu {
     display: none;
-} */
-.buttons>button:nth-child(2){
+}
+
+.buttons>button:nth-child(2) {
     margin-right: 10px;
 }
-.buttons{
+
+.buttons {
     display: flex;
     flex-direction: row;
 }
 
 /* CSS for Main-section */
-.Main-block div{
+.Main-block div {
     height: 300px;
     width: 100vh;
     border-radius: 20px;
-    background-color: lightsteelblue;
+    background-color: var(--bgcolorbluish);
     padding: 10px;
     margin: 20px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);   
+    box-shadow: 3px 3px 5px var(--boxshadowcolorblack);
 }
-.Main-block div:hover{
-    transform: translate(100px,0);
-    box-shadow: -10px 0 10px rgba(255, 0, 0, 0.1);
+
+.Main-block div:hover {
+    transform: translate(100px, 0);
+    box-shadow: -10px 0 10px var(--boxshadowcolorreddish);
 }
 
 /* CSS for About Us section */
 
-.aboutus-panels{
+.aboutus-panels {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.aboutus-panels div{
+.aboutus-panels div {
     height: 150px;
     width: 50vh;
     border-radius: 20px;
-    background-color: lightsteelblue;
+    background-color: var(--bgcolorbluish);
     padding: 10px;
     margin: 20px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);   
-    text-align:justify;
+    box-shadow: 3px 3px 5px var(--boxshadowcolorblack);
+    text-align: justify;
 }
-.aboutus-panels h2{
+
+.aboutus-panels h2 {
     text-align: center;
     font-style: italic;
+    color: var(--fontcolorblack);
 }
-.aboutus-panels li{
+
+.aboutus-panels li {
     list-style: none;
     padding-top: 10px;
 }
-.aboutus h1{
+
+.aboutus h1 {
     margin-left: 20px;
     font-size: 38px;
+    color: var(--fontcolorblack);
 }
-.aboutus h1:hover{
-    background-color: #f0f0f0;
+
+.aboutus h1:hover {
+    background-color: var(--bgcolorf0f0f0);
 }
 
 /* CSS for Footer */
 
-footer{
+footer {
     text-align: center;
     font-size: 24px;
-    background-color: lightsteelblue;
-    color: black;
+    background-color: var(--bgcolorbluish);
+    color: var(--fontcolorblack);
     padding-bottom: 10px;
     padding-top: 10px;
 }

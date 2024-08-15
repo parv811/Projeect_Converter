@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Digital Converter</title>
   <link rel="stylesheet" href="project.css">
   <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
     href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
@@ -22,8 +22,8 @@
       Digital Converter
     </h1>
     <div class="buttons" id="buttons">
-      <button onclick=""><i class="fa-regular fa-moon"></i></button>
-      <button onclick=""><i class="fa-solid fa-bars"></i></button>
+      <button onclick="" id="themeButton"><i class="fa-regular fa-moon"></i></button>
+      <button onclick="" id="menuButton"><i class="fa-solid fa-bars"></i></button>
     </div>
   </header>
   <nav class="menu" id="menu">
@@ -43,8 +43,8 @@
       <label for="Dec">Decimal:</label>
       <input type="text" name="Dec" id="Dec-Bin" value="">
 
-      <input type="button" value="Convert" onclick="">
-      <input type="button" value="Clear" onclick="">
+      <input type="button" value="convertDtoB" onclick="">
+      <input type="button" value="clearDtoB" onclick="">
 
       <label for="Bin">Binary:</label>
       <input type="text" name="Bin" id="Dec-Bin1" value="">
@@ -52,40 +52,40 @@
     <div id="Decimal-Hexadecimal" class="Decimal-Hexadecimal">
       <label for="Dec1">Decimal:</label>
       <input type="text" name="Dec1" id="Dec-hex" value="">
-      <input type="button" value="Convert" onclick="">
-      <input type="button" value="Clear" onclick="">
+      <input type="button" value="convertDtoH" onclick="">
+      <input type="button" value="clearDtoH" onclick="">
       <label for="Hex">Hexadecimal:</label>
       <input type="text" name="Hex" id="Dec-hex1" value="">
     </div>
     <div id="Decimal-Octal" class="Decimal-Octal">
       <label for="Dec2">Decimal:</label>
       <input type="text" name="Dec2" id="Dec-oct" value="">
-      <input type="button" value="Convert" onclick="">
-      <input type="button" value="Clear" onclick="">
+      <input type="button" value="convertDtoO" onclick="">
+      <input type="button" value="clearDtoO" onclick="">
       <label for="Oct">Octal:</label>
       <input type="text" name="Oct" id="Dec-oct1" value="">
     </div>
     <div id="Binary-Hexadecimal" class="Binary-Hexadecimal">
       <label for="Bin1">Binary:</label>
       <input type="text" name="Bin1" id="Bin-hex" value="">
-      <input type="button" value="Convert" onclick="">
-      <input type="button" value="Clear" onclick="">
+      <input type="button" value="convertBtoH" onclick="">
+      <input type="button" value="clearBtoH" onclick="">
       <label for="Hex1">Hexadecimal:</label>
       <input type="text" name="Hex1" id="Bin-hex1" value="">
     </div>
     <div id="Binary-Octal" class="Binary-Octal">
       <label for="Bin2">Binary:</label>
       <input type="text" name="Bin2" id="Bin-oct" value="">
-      <input type="button" value="Convert" onclick="">
-      <input type="button" value="Clear" onclick="">
+      <input type="button" value="convertBtoO" onclick="">
+      <input type="button" value="clearBtoO" onclick="">
       <label for="Oct1">Octal:</label>
       <input type="text" name="Oct1" id="Bin-oct1" value="">
     </div>
     <div id="Octal-Hexadecimal" class="Octal-Hexadecimal">
       <label for="Oct2">Octal:</label>
       <input type="text" name="Oct2" id="oct-hex" value="">
-      <input type="button" value="Convert" onclick="">
-      <input type="button" value="Clear" onclick="">
+      <input type="button" value="convertOtoH" onclick="">
+      <input type="button" value="clearOtoH" onclick="">
       <label for="Hex2">Hexadecimal:</label>
       <input type="text" name="Hex2" id="oct-hex1" value="">
     </div>
@@ -114,7 +114,7 @@
         </a>
         <a href=" https://www.linkedin.com/in/nikhil-khambhaliya-3a48a2202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
           " target="_blank">
-          <li><i class="fa-brands fa-linkedin"> +linkedin</i></li>
+          <li><i class="fa-brands fa-linkedin"> linkedin</i></li>
         </a>
         <a href=" https://www.instagram.com/nikk797edu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== "
           target="_blank">
@@ -157,6 +157,7 @@
   <footer class="footer" id="footer">
     <p id="para" id="para">copyright@2024 www.converter.com All rights reserved.</p>
   </footer>
+  <script src="project.js"></script>
 </body>
 
 </html>
