@@ -20,6 +20,7 @@ nav ul{
     position: fixed;
     top: 65px;
     right: 0;
+    height: 50vh;
     width: 250px;
     z-index: 999;
     background-color: lightsteelblue;
