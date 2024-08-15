@@ -5,9 +5,11 @@
 ### Javascript: Pratham and Parthiv
 
 ### Header
-header:- class="header" id="header"
+header:- class="header" id="header" <br>
+div:- class="buttons" id="buttons"<br>
 
 ### Body
+nav:- class="menu" id="menu" <br>
 #### main body section
 section:- class="Main-block" id="Main-block" <br><br>
 div:- id="Decimal-Binary" class="Decimal-Binary" <br>

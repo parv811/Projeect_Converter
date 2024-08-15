@@ -17,140 +17,145 @@
 
 <body>
   <header class="header" id="header">
-      <i class="fa-solid fa-calculator"></i><br>
-     <h1>Digital Converter</h1>
+    <h1>
+      <i class="fa-solid fa-calculator"></i>
+      Digital Converter
+    </h1>
+    <div class="buttons" id="buttons">
       <button onclick=""><i class="fa-regular fa-moon"></i></button>
       <button onclick=""><i class="fa-solid fa-bars"></i></button>
-      <div class="menu" id="menu">
-        <a href="#">home</a><br>
-        <a href="#Decimal-Binary">Decimal-Binary</a><br>
-        <a href="#Decimal-Hexadecimal">Decimal-Hexadecimal</a><br>
-        <a href="#Decimal-Octal">Decimal-Octal</a><br>
-        <a href="#Binary-Hexadecimal">Binary-Hexadecimal</a><br>
-        <a href="#Binary-Octal">Binary-Octal</a><br>
-        <a href="#Octal-Hexadecimal">Octal-Hexadecimal</a><br>
-        <a href="#aboutus">about us</a>
-
-      </div>
-  </header><br><br>
+    </div>
+  </header>
+  <nav class="menu" id="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#Decimal-Binary">Decimal to Binary</a></li>
+      <li><a href="#Decimal-Hexadecimal">Decimal to Hexadecimal</a></li>
+      <li><a href="#Decimal-Octal">Decimal to Octal</a></li>
+      <li><a href="#Binary-Hexadecimal">Binary to Hexadecimal</a></li>
+      <li><a href="#Binary-Octal">Binary to Octal</a></li>
+      <li><a href="#Octal-Hexadecimal">Octal to Hexadecimal</a></li>
+      <li><a href="#aboutus">About Us</a></li>
+    </ul>
+  </nav>
   <section class="Main-block" id="Main-block">
-    <div id="Decimal-Binary" class="Decimal-Binary">
+    <div id="Decimal-Binary" class="Decimal-Binary" style="margin-top: 90px;">
       <label for="Dec">Decimal:</label>
-      <input type="text" name="Dec" id="Dec-Bin" value=""><br><br>
-      <input type="button" value="Convert" onclick=""><br><br>
-      <input type="button" value="Clear" onclick=""><br><br>
+      <input type="text" name="Dec" id="Dec-Bin" value="">
+
+      <input type="button" value="Convert" onclick="">
+      <input type="button" value="Clear" onclick="">
+
       <label for="Bin">Binary:</label>
-      <input type="text" name="Bin" id="Dec-Bin1" value=""><br><br>
-      <hr>
+      <input type="text" name="Bin" id="Dec-Bin1" value="">
     </div>
     <div id="Decimal-Hexadecimal" class="Decimal-Hexadecimal">
       <label for="Dec1">Decimal:</label>
-      <input type="text" name="Dec1" id="Dec-hex" value=""><br><br>
-      <input type="button" value="Convert" onclick=""><br><br>
-      <input type="button" value="Clear" onclick=""><br><br>
+      <input type="text" name="Dec1" id="Dec-hex" value="">
+      <input type="button" value="Convert" onclick="">
+      <input type="button" value="Clear" onclick="">
       <label for="Hex">Hexadecimal:</label>
-      <input type="text" name="Hex" id="Dec-hex1" value=""><br><br>
-      <hr>
+      <input type="text" name="Hex" id="Dec-hex1" value="">
     </div>
     <div id="Decimal-Octal" class="Decimal-Octal">
       <label for="Dec2">Decimal:</label>
-      <input type="text" name="Dec2" id="Dec-oct" value=""><br><br>
-      <input type="button" value="Convert" onclick=""><br><br>
-      <input type="button" value="Clear" onclick=""><br><br>
+      <input type="text" name="Dec2" id="Dec-oct" value="">
+      <input type="button" value="Convert" onclick="">
+      <input type="button" value="Clear" onclick="">
       <label for="Oct">Octal:</label>
-      <input type="text" name="Oct" id="Dec-oct1" value=""><br><br>
-      <hr>
+      <input type="text" name="Oct" id="Dec-oct1" value="">
     </div>
     <div id="Binary-Hexadecimal" class="Binary-Hexadecimal">
       <label for="Bin1">Binary:</label>
-      <input type="text" name="Bin1" id="Bin-hex" value=""><br><br>
-      <input type="button" value="Convert" onclick=""><br><br>
-      <input type="button" value="Clear" onclick=""><br><br>
+      <input type="text" name="Bin1" id="Bin-hex" value="">
+      <input type="button" value="Convert" onclick="">
+      <input type="button" value="Clear" onclick="">
       <label for="Hex1">Hexadecimal:</label>
-      <input type="text" name="Hex1" id="Bin-hex1" value=""><br><br>
-      <hr>
+      <input type="text" name="Hex1" id="Bin-hex1" value="">
     </div>
     <div id="Binary-Octal" class="Binary-Octal">
       <label for="Bin2">Binary:</label>
-      <input type="text" name="Bin2" id="Bin-oct" value=""><br><br>
-      <input type="button" value="Convert" onclick=""><br><br>
-      <input type="button" value="Clear" onclick=""><br><br>
+      <input type="text" name="Bin2" id="Bin-oct" value="">
+      <input type="button" value="Convert" onclick="">
+      <input type="button" value="Clear" onclick="">
       <label for="Oct1">Octal:</label>
-      <input type="text" name="Oct1" id="Bin-oct1" value=""><br><br>
-      <hr>
+      <input type="text" name="Oct1" id="Bin-oct1" value="">
     </div>
     <div id="Octal-Hexadecimal" class="Octal-Hexadecimal">
       <label for="Oct2">Octal:</label>
-      <input type="text" name="Oct2" id="oct-hex" value=""><br><br>
-      <input type="button" value="Convert" onclick=""><br><br>
-      <input type="button" value="Clear" onclick=""><br><br>
+      <input type="text" name="Oct2" id="oct-hex" value="">
+      <input type="button" value="Convert" onclick="">
+      <input type="button" value="Clear" onclick="">
       <label for="Hex2">Hexadecimal:</label>
       <input type="text" name="Hex2" id="oct-hex1" value="">
     </div>
   </section>
   <section class="aboutus" id="aboutus">
-     <h1>about us</h1>
-     <h2>Parv</h2>
+    <h1> About Us</h1>
+    <div class="aboutus-panels" id="aboutus-panels">
       <div class="parv" id="parv">
+        <h2>Parv</h2>
         <a href="https://github.com/parv811" target="_blank">
-          <li><i class="fa-brands fa-square-github">github</i></li>
+          <li><i class="fa-brands fa-square-github"> github</i></li>
         </a>
         <a href=" https://www.linkedin.com/in/parv-shah-3b97081aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
-        " target="_blank">
-          <li><i class="fa-brands fa-linkedin">linkedin</i></li>
+          " target="_blank">
+          <li><i class="fa-brands fa-linkedin"> linkedin</i></li>
         </a>
         <a href="https://www.instagram.com/parvshah85?igsh=bDR3cG1raWZzeGhy&utm_source=qr " target="_blank">
-        <li><i class="fa-brands fa-square-instagram">instagram</i></li>
-      </a>
+          <li><i class="fa-brands fa-square-instagram"> instagram</i></li>
+        </a>
       </div>
 
       <div class="nikhil" id="nikhil">
         <h2>Nikhil</h2>
         <a href="https://github.com/Nkhambhaliya" target="_blank">
-          <li><i class="fa-brands fa-square-github">github</i></li>
+          <li><i class="fa-brands fa-square-github"> github</i></li>
         </a>
         <a href=" https://www.linkedin.com/in/nikhil-khambhaliya-3a48a2202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-        " target="_blank">
-          <li><i class="fa-brands fa-linkedin">linkedin</i></li>
+          " target="_blank">
+          <li><i class="fa-brands fa-linkedin"> +linkedin</i></li>
         </a>
-        <a href=" https://www.instagram.com/nikk797edu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== " target="_blank">
-          <li><i class="fa-brands fa-square-instagram">instagram</i></li>
+        <a href=" https://www.instagram.com/nikk797edu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== "
+          target="_blank">
+          <li><i class="fa-brands fa-square-instagram"> instagram</i></li>
         </a>
       </div>
-      
+
       <div class="vedant" id="vedant">
         <h2>Vedant</h2>
         <a href="https://github.com/Vedantp81" target="_blank">
-          <li><i class="fa-brands fa-square-github">github</i></li>
+          <li><i class="fa-brands fa-square-github"> github</i></li>
         </a>
       </div>
       <div class="kanan" id="kanan">
         <h2>Kanan</h2>
         <a href="https://github.com/KananThakkar" target="_blank">
-          <li><i class="fa-brands fa-square-github">github</i></li>
+          <li><i class="fa-brands fa-square-github"> github</i></li>
         </a>
       </div>
       <div class="heva" id="heva">
         <h2>Heva</h2>
         <a href="https://github.com/Hevapatel" target="_blank">
-          <li><i class="fa-brands fa-square-github">github</i></li>
+          <li><i class="fa-brands fa-square-github"> github</i></li>
         </a>
       </div>
       <div class="pratham" id="pratham">
         <h2>Pratham</h2>
         <a href="https://github.com/PrathamVadhavana" target="_blank">
-          <li><i class="fa-brands fa-square-github">github</i></li>
+          <li><i class="fa-brands fa-square-github"> github</i></li>
         </a>
       </div>
       <div class="parthiv" id="parthiv">
         <h2>Parthiv</h2>
         <a href="https://github.com/Parthiv49" target="_blank">
-          <li><i class="fa-brands fa-square-github">github</i></li>
+          <li><i class="fa-brands fa-square-github"> github</i></li>
         </a>
       </div>
+    </div>
   </section>
   <footer class="footer" id="footer">
-      <p id="para" id="para">copyright@2024 www.converter.com All rights reserved.</p>
+    <p id="para" id="para">copyright@2024 www.converter.com All rights reserved.</p>
   </footer>
 </body>
 
