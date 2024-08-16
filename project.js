@@ -5,6 +5,9 @@ var menuButtonState = 0;  //No display menu default
 var themeButtonState = 0; //Default light mode
 let root = document.querySelector(':root'); // selects html root element
 
+
+changeMenuIcon = (icon2) => icon2.classList.toggle('fa-xmark');
+
 //To hide and display the menu
 menuButton.addEventListener('click',()=>{
     if(menuButtonState == 0) 
@@ -35,6 +38,7 @@ themeButton.addEventListener('click',()=>{
         root.style.setProperty('--boxshadowcolorblack','rgba(255, 255, 255, 0.3)');
         root.style.setProperty('--boxshadowcolorfadeblack','rgba(255, 255, 255, 0.1)'); 
         
+        themeButton.classList.replace('fa-moon', 'fa-sun');
         themeButtonState = 1;
     }
     else
@@ -45,13 +49,14 @@ themeButton.addEventListener('click',()=>{
         root.style.setProperty('--bgcolorwhite','white');
         root.style.setProperty('--bgcolorbluish','lightsteelblue');
         root.style.setProperty('--bgcolorf0f0f0','#f0f0f0');
-        root.style.setProperty('--bgcolor090909','#f9f9f9');
+        root.style.setProperty('--bgcolorf9f9f9','#f9f9f9');
         root.style.setProperty('--bordercolorwhite','white');
         root.style.setProperty('--boxshadowcolorreddish','rgba(255, 0, 0, 0.1)');
         root.style.setProperty('--boxshadowcolorblack','rgba(0, 0, 0, 0.3)');
-        root.style.setProperty('--boxshadowcolorfadewhite','rgba(0, 0, 0, 0.1)'); 
+        root.style.setProperty('--boxshadowcolorfadeblack','rgba(0, 0, 0, 0.1)'); 
         
-        themeButtonState = 0
+        themeButton.classList.replace('fa-sun', 'fa-moon');
+        themeButtonState = 0;
     }
 })
 

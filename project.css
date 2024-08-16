@@ -1,8 +1,8 @@
 /*Global variables for light/dark theme
   Important Note: If you are adding color, then do decide light and dark version of that color
   and include it in :root below in form of variables. Only give colors in form of variables...*/
-  
-  :root {
+
+:root {
     --fontcolorblack: black;
     --fontcolorwhite: white;
     --fontcolorbluish: lightsteelblue;
@@ -48,7 +48,7 @@ nav ul {
     position: fixed;
     top: 65px;
     right: 0;
-    height: 50vh;
+    height: 325px;
     width: 250px;
     z-index: 999;
     background-color: var(--bgcolorbluish);
@@ -76,6 +76,7 @@ nav a {
 
 nav a:hover {
     background-color: var(--bgcolorf0f0f0);
+    border-radius: 20px;
 }
 
 header {
@@ -110,7 +111,7 @@ header>h1 {
     width: 40px;
 }
 
-.buttons>button>i {
+.buttons>button {
     font-size: 20px;
 }
 
@@ -135,21 +136,39 @@ header>h1 {
 }
 
 /* CSS for Main-section */
-.Main-block div {
-    height: 180px;
-    width: 100vh;
+.Main-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .Main-block {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+.Main-block div.converter {
+    height: 200px;
+    width: 75vh;
     border-radius: 20px;
     background-color: var(--bgcolorf9f9f9);
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
     box-shadow: 3px 3px 5px var(--boxshadowcolorfadeblack);
 }
 
-.Main-block div:hover {
+.Main-block div.converter:hover {
     box-shadow: 3px 3px 5px var(--boxshadowcolorfadeblack) inset;
 }
 
-.Main-block>div input{
+.Main-block>div input {
     color: var(--fontcolorwhite);
     font-size: 20px;
     border: 1px solid var(--bgcolorbluish);
@@ -157,22 +176,35 @@ header>h1 {
     padding: 4px 8px;
     background-color: var(--bgcolorbluish);
     margin-bottom: 30px;
-} 
-.Main-block>div input:nth-child(2){
-    width: 250px;
 }
-.Main-block>div input:last-child{
-    width: 250px;
-}
-.Main-block>div input:hover{
+
+.Main-block>div input:hover {
     color: var(--fontcolorbluish);
     background-color: var(--bgcolorwhite);
     border: 1px solid var(--bgcolorbluish);
 }
-.Main-block>div label{
+
+.Main-block>div label {
     color: var(--fontcolorbluish);
     font-size: 20px;
 }
+
+.converter{
+    text-align: center;
+}
+
+.converter-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.converter input[type=text]{
+    text-align: center;
+    width: 50%;
+}
+
 /* CSS for About Us section */
 
 .aboutus-panels {
@@ -217,6 +249,7 @@ header>h1 {
 /* CSS for Footer */
 
 footer {
+    width: 100%;
     text-align: center;
     font-size: 24px;
     background-color: var(--bgcolorbluish);

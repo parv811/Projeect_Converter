@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital Converter</title>
   <link rel="stylesheet" href="project.css">
-  <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
-    href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
@@ -22,8 +20,8 @@
       Digital Converter
     </h1>
     <div class="buttons" id="buttons">
-      <button onclick="" id="themeButton"><i class="fa-regular fa-moon"></i></button>
-      <button onclick="" id="menuButton"><i class="fa-solid fa-bars"></i></button>
+      <button id="themeButton" class="fa-regular fa-moon"></button>
+      <button id="menuButton" class="fa-solid fa-bars" onclick="changeMenuIcon(this)"></button>
     </div>
   </header>
   <nav class="menu" id="menu">
@@ -38,59 +36,95 @@
       <li><a href="#aboutus">About Us</a></li>
     </ul>
   </nav>
+  <br><br><br><br><br>
   <section class="Main-block" id="Main-block">
-    <div id="Decimal-Binary" class="Decimal-Binary" style="margin-top: 90px;">
+    <div id="Decimal-Binary" class="Decimal-Binary converter">
       <label for="Dec">Decimal:</label>
-      <input type="text" name="Dec" id="Dec-Bin" value=""><br>
+      <input type="text" name="Dec" id="Dec-Bin" value="">
+      <br>
 
-      <input type="button" id="convertDtoB" value="Convert" onclick="">
-      <input type="button" id="clearDtoB" value="Clear" onclick="">
-      <input type="button" id="swapDtoB" value="Swap" onclick=""><br>
+      <div class="converter-buttons">
+        <input type="button" id="swapDtoB" value="Swap" onclick="">
+        <input type="button" id="convertDtoB" value="Convert" onclick="">
+        <input type="button" id="clearDtoB" value="Clear" onclick="">
+        <br>
+      </div>
+
       <label for="Bin">Binary:</label>
       <input type="text" name="Bin" id="Dec-Bin1" value="">
     </div>
-    <div id="Decimal-Hexadecimal" class="Decimal-Hexadecimal">
+    <div id="Decimal-Hexadecimal" class="Decimal-Hexadecimal converter">
       <label for="Dec1">Decimal:</label>
-      <input type="text" name="Dec1" id="Dec-hex" value=""><br>
-      <input type="button" id="convertDtoH" value="Convert" onclick="">
-      <input type="button" id="clearDtoH" value="Clear" onclick="">
-      <input type="button" id="swapDtoH" value="Swap" onclick=""><br>
+      <input type="text" name="Dec1" id="Dec-hex" value="">
+      <br>
+
+      <div class="converter-buttons">
+        <input type="button" id="swapDtoH" value="Swap" onclick="">
+        <input type="button" id="convertDtoH" value="Convert" onclick="">
+        <input type="button" id="clearDtoH" value="Clear" onclick="">
+        <br>
+      </div>
+
       <label for="Hex">Hexadecimal:</label>
       <input type="text" name="Hex" id="Dec-hex1" value="">
     </div>
-    <div id="Decimal-Octal" class="Decimal-Octal">
+    <div id="Decimal-Octal" class="Decimal-Octal converter">
       <label for="Dec2">Decimal:</label>
-      <input type="text" name="Dec2" id="Dec-oct" value=""><br>
-      <input type="button" id="convertDtoO" value="Convert" onclick="">
-      <input type="button" id="clearDtoO" value="Clear" onclick="">
-      <input type="button" id="swapDtoO" value="Swap" onclick=""><br>
+      <input type="text" name="Dec2" id="Dec-oct" value="">
+      <br>
+
+      <div class="converter-buttons">
+        <input type="button" id="swapDtoO" value="Swap" onclick="">
+        <input type="button" id="convertDtoO" value="Convert" onclick="">
+        <input type="button" id="clearDtoO" value="Clear" onclick="">
+        <br>
+      </div>
+
       <label for="Oct">Octal:</label>
       <input type="text" name="Oct" id="Dec-oct1" value="">
     </div>
-    <div id="Binary-Hexadecimal" class="Binary-Hexadecimal">
+    <div id="Binary-Hexadecimal" class="Binary-Hexadecimal converter">
       <label for="Bin1">Binary:</label>
-      <input type="text" name="Bin1" id="Bin-hex" value=""><br>
-      <input type="button" id="convertBtoH" value="Convert" onclick="">
-      <input type="button" id="clearBtoH" value="Clear" onclick="">
-      <input type="button" id="swapBtoH" value="Swap" onclick=""><br>
+      <input type="text" name="Bin1" id="Bin-hex" value="">
+      <br>
+
+      <div class="converter-buttons">
+        <input type="button" id="swapBtoH" value="Swap" onclick="">
+        <input type="button" id="convertBtoH" value="Convert" onclick="">
+        <input type="button" id="clearBtoH" value="Clear" onclick="">
+        <br>
+      </div>
+
       <label for="Hex1">Hexadecimal:</label>
       <input type="text" name="Hex1" id="Bin-hex1" value="">
     </div>
-    <div id="Binary-Octal" class="Binary-Octal">
+    <div id="Binary-Octal" class="Binary-Octal converter">
       <label for="Bin2">Binary:</label>
-      <input type="text" name="Bin2" id="Bin-oct" value=""><br>
-      <input type="button" id="convertBtoO" value="Convert" onclick="">
-      <input type="button" id="clearBtoO" value="Clear" onclick="">
-      <input type="button" id="swapBtoO" value="Swap" onclick=""><br>
+      <input type="text" name="Bin2" id="Bin-oct" value="">
+      <br>
+
+      <div class="converter-buttons">
+        <input type="button" id="swapBtoO" value="Swap" onclick="">
+        <input type="button" id="convertBtoO" value="Convert" onclick="">
+        <input type="button" id="clearBtoO" value="Clear" onclick="">
+        <br>
+      </div>
+
       <label for="Oct1">Octal:</label>
       <input type="text" name="Oct1" id="Bin-oct1" value="">
     </div>
-    <div id="Octal-Hexadecimal" class="Octal-Hexadecimal">
+    <div id="Octal-Hexadecimal" class="Octal-Hexadecimal converter">
       <label for="Oct2">Octal:</label>
-      <input type="text" name="Oct2" id="oct-hex" value=""><br>
-      <input type="button" id="convertOtoH" value="Convert" onclick="">
-      <input type="button" id="clearOtoH" value="Clear" onclick="">
-      <input type="button" id="swapOtoH" value="Swap" onclick=""><br>
+      <input type="text" name="Oct2" id="oct-hex" value="">
+      <br>
+
+      <div class="converter-buttons">
+        <input type="button" id="swapOtoH" value="Swap" onclick="">
+        <input type="button" id="convertOtoH" value="Convert" onclick="">
+        <input type="button" id="clearOtoH" value="Clear" onclick="">
+        <br>
+      </div>
+
       <label for="Hex2">Hexadecimal:</label>
       <input type="text" name="Hex2" id="oct-hex1" value="">
     </div>
