@@ -4,7 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Converter</title>
+  <title>Bit Converter</title>
+
+  <!-- SwipperJS  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
   <link rel="stylesheet" href="project.css">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
@@ -17,7 +22,7 @@
   <header class="header" id="header">
     <h1>
       <i class="fa-solid fa-calculator"></i>
-      Digital Converter
+      BitConverter
     </h1>
     <div class="buttons" id="buttons">
       <button id="themeButton" class="fa-regular fa-moon"></button>
@@ -249,9 +254,15 @@
   </section>
   <section class="aboutus" id="aboutus">
     <h1> About Us</h1>
-    <div class="aboutus-panels" id="aboutus-panels">
-      <div class="parv" id="parv">
-        <h2>Parv</h2>
+    
+    <div class="about_body">
+    <div id="container-swip" class="container swiper">
+      <div class="slider-wrapper">
+
+        <div class="card-list swiper-wrapper">
+          <!-- Item1 -->
+        <div class="card-item swiper-slide">
+            <h2>Parv</h2>
         <a href="https://github.com/parv811" target="_blank">
           <li><i class="fa-brands fa-square-github"> github</i></li>
         </a>
@@ -262,10 +273,11 @@
         <a href="https://www.instagram.com/parvshah85?igsh=bDR3cG1raWZzeGhy&utm_source=qr " target="_blank">
           <li><i class="fa-brands fa-square-instagram"> instagram</i></li>
         </a>
-      </div>
+        </div>
 
-      <div class="nikhil" id="nikhil">
-        <h2>Nikhil</h2>
+        <!-- Item 2 -->
+        <div class="card-item swiper-slide">
+          <h2>Nikhil</h2>
         <a href="https://github.com/Nkhambhaliya" target="_blank">
           <li><i class="fa-brands fa-square-github"> github</i></li>
         </a>
@@ -277,44 +289,92 @@
           target="_blank">
           <li><i class="fa-brands fa-square-instagram"> instagram</i></li>
         </a>
+
       </div>
 
-      <div class="vedant" id="vedant">
+      <!-- Item 3 -->
+      <div class="card-item swiper-slide">
         <h2>Vedant</h2>
         <a href="https://github.com/Vedantp81" target="_blank">
           <li><i class="fa-brands fa-square-github"> github</i></li>
         </a>
-      </div>
-      <div class="kanan" id="kanan">
-        <h2>Kanan</h2>
+        <br>
+        <p></p>
+    </div>
+
+<!-- Item 4 -->
+    <div class="card-item swiper-slide">
+      <h2>Kanan</h2>
         <a href="https://github.com/KananThakkar" target="_blank">
           <li><i class="fa-brands fa-square-github"> github</i></li>
         </a>
-      </div>
-      <div class="heva" id="heva">
-        <h2>Heva</h2>
+        <br>
+        <p></p>
+
+  </div>
+
+
+  <!-- Item 5 -->
+  <div class="card-item swiper-slide">
+    <h2>Heva</h2>
         <a href="https://github.com/Hevapatel" target="_blank">
           <li><i class="fa-brands fa-square-github"> github</i></li>
         </a>
-      </div>
-      <div class="pratham" id="pratham">
-        <h2>Pratham</h2>
+        <br>
+        <p></p>
+
+
+</div>
+
+<!-- Item 6 -->
+<div class="card-item swiper-slide">
+  <h2>Pratham</h2>
         <a href="https://github.com/PrathamVadhavana" target="_blank">
           <li><i class="fa-brands fa-square-github"> github</i></li>
         </a>
-      </div>
-      <div class="parthiv" id="parthiv">
-        <h2>Parthiv</h2>
+        <br>
+        <p></p>
+
+
+</div>
+
+<!-- Item 7 -->
+<div class="card-item swiper-slide">
+  <h2>Parthiv</h2>
         <a href="https://github.com/Parthiv49" target="_blank">
           <li><i class="fa-brands fa-square-github"> github</i></li>
         </a>
+        <br>
+        <p></p>
+
+
+</div>
+
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+
       </div>
+
     </div>
+  </div>
+
   </section>
   <footer class="footer" id="footer">
     <p id="para" id="para">copyright@2024 www.converter.com All rights reserved.</p>
   </footer>
+  <!-- SwipperJS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <script src="project.js"></script>
+  <script src="swiper.js"></script>
+  
 </body>
 
 </html>

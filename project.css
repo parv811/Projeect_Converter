@@ -34,7 +34,9 @@ label {
 body {
     min-height: 100vh;
     background-color: var(--bgcolorwhite);
-}
+    
+
+}   
 
 nav {
     background-color: var(--bgcolorbluish);
@@ -190,7 +192,7 @@ header>h1 {
 }
 
 .converter{
-    text-align: center;
+    text-align: left;
 }
 
 .converter-buttons{
@@ -207,34 +209,7 @@ header>h1 {
 
 /* CSS for About Us section */
 
-.aboutus-panels {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
-.aboutus-panels div {
-    height: 150px;
-    width: 50vh;
-    border-radius: 20px;
-    background-color: var(--bgcolorbluish);
-    padding: 10px;
-    margin: 20px;
-    box-shadow: 3px 3px 5px var(--boxshadowcolorblack);
-    text-align: justify;
-}
-
-.aboutus-panels h2 {
-    text-align: center;
-    font-style: italic;
-    color: var(--fontcolorblack);
-}
-
-.aboutus-panels li {
-    list-style: none;
-    padding-top: 10px;
-}
 
 .aboutus h1 {
     margin-left: 20px;
@@ -245,6 +220,29 @@ header>h1 {
 .aboutus h1:hover {
     background-color: var(--bgcolorf0f0f0);
 }
+
+/* For Slider */
+
+
+.card-list .card-item{
+    color: black;
+    width: 150px;
+    height: 150px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 5px;
+    background: var(--bgcolorbluish);
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+
+
+
+
 
 /* CSS for Footer */
 
