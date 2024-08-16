@@ -39,95 +39,213 @@
   <br><br><br><br><br>
   <section class="Main-block" id="Main-block">
     <div id="Decimal-Binary" class="Decimal-Binary converter">
-      <label for="Dec">Decimal:</label>
-      <input type="text" name="Dec" id="Dec-Bin" value="">
-      <br>
+      <table>
+        <tr>
+          <td>
+            <label for="Dec">Decimal:</label>
+          </td>
+          <td>
+            <input type="text" name="Dec" id="Dec-Bin" value="">
+            <br>
+          </td>
+        </tr>
+        <tr>
+          <p id="error" class="error"> </p>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="converter-buttons">
+              <input type="button" id="swapDtoB" value="Swap" onclick="">
+              <input type="button" id="convertDtoB" value="Convert" onclick="">
+              <input type="button" id="clearDtoB" value="Clear" onclick="">
+              <br>
+            </div>
+          </td>
+        </tr>
+          <tr>
+            <td>
+              <label for="Bin">Binary:</label>
+            </td>
+            <td>
+              <input type="text" name="Bin" id="Dec-Bin1" value="">
+            </td>
+          </tr>
+       </table>
+     </div>
 
-      <div class="converter-buttons">
-        <input type="button" id="swapDtoB" value="Swap" onclick="">
-        <input type="button" id="convertDtoB" value="Convert" onclick="">
-        <input type="button" id="clearDtoB" value="Clear" onclick="">
-        <br>
-      </div>
 
-      <label for="Bin">Binary:</label>
-      <input type="text" name="Bin" id="Dec-Bin1" value="">
-    </div>
     <div id="Decimal-Hexadecimal" class="Decimal-Hexadecimal converter">
-      <label for="Dec1">Decimal:</label>
-      <input type="text" name="Dec1" id="Dec-hex" value="">
-      <br>
-
-      <div class="converter-buttons">
-        <input type="button" id="swapDtoH" value="Swap" onclick="">
-        <input type="button" id="convertDtoH" value="Convert" onclick="">
-        <input type="button" id="clearDtoH" value="Clear" onclick="">
-        <br>
+      <table>
+        <tr>
+          <td>
+            <label for="Dec1">Decimal:</label>
+          </td>
+          <td>
+            <input type="text" name="Dec1" id="Dec-hex" value="">
+            <br>
+          </td>
+        </tr>
+        <tr>
+          <p id="error" class="error"></p>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="converter-buttons">
+              <input type="button" id="swapDtoH" value="Swap" onclick="">
+              <input type="button" id="convertDtoH" value="Convert" onclick="">
+              <input type="button" id="clearDtoH" value="Clear" onclick="">
+              <br>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Hex">Hexadecimal:</label>
+          </td>
+          <td>
+            <input type="text" name="Hex" id="Dec-hex1" value="">
+          </td>
+        </tr>
+      </table>
       </div>
 
-      <label for="Hex">Hexadecimal:</label>
-      <input type="text" name="Hex" id="Dec-hex1" value="">
-    </div>
+
     <div id="Decimal-Octal" class="Decimal-Octal converter">
-      <label for="Dec2">Decimal:</label>
-      <input type="text" name="Dec2" id="Dec-oct" value="">
-      <br>
-
-      <div class="converter-buttons">
-        <input type="button" id="swapDtoO" value="Swap" onclick="">
-        <input type="button" id="convertDtoO" value="Convert" onclick="">
-        <input type="button" id="clearDtoO" value="Clear" onclick="">
-        <br>
-      </div>
-
-      <label for="Oct">Octal:</label>
-      <input type="text" name="Oct" id="Dec-oct1" value="">
+      <table>
+        <tr>
+         <td>
+          <label for="Dec2">Decimal:</label>
+         </td> 
+         <td>
+          <input type="text" name="Dec2" id="Dec-oct" value="">
+          <br>
+         </td>
+        </tr>
+        <tr>
+          <p id="error" class="error"> </p>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="converter-buttons">
+              <input type="button" id="swapDtoO" value="Swap" onclick="">
+              <input type="button" id="convertDtoO" value="Convert" onclick="">
+              <input type="button" id="clearDtoO" value="Clear" onclick="">
+              <br>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Oct">Octal:</label>
+          </td>
+          <td>
+            <input type="text" name="Oct" id="Dec-oct1" value="">
+          </td>
+        </tr>
+        </table>
+     
     </div>
     <div id="Binary-Hexadecimal" class="Binary-Hexadecimal converter">
-      <label for="Bin1">Binary:</label>
-      <input type="text" name="Bin1" id="Bin-hex" value="">
-      <br>
-
-      <div class="converter-buttons">
-        <input type="button" id="swapBtoH" value="Swap" onclick="">
-        <input type="button" id="convertBtoH" value="Convert" onclick="">
-        <input type="button" id="clearBtoH" value="Clear" onclick="">
-        <br>
-      </div>
-
-      <label for="Hex1">Hexadecimal:</label>
-      <input type="text" name="Hex1" id="Bin-hex1" value="">
-    </div>
+      <table>
+        <tr>
+          <td>
+            <label for="Bin1">Binary:</label>
+          </td>
+          <td>
+            <input type="text" name="Bin1" id="Bin-hex" value="">
+              <br>
+          </td>
+        </tr>
+        <tr>
+          <p id="error" class="error"></p>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="converter-buttons">
+              <input type="button" id="swapBtoH" value="Swap" onclick="">
+              <input type="button" id="convertBtoH" value="Convert" onclick="">
+              <input type="button" id="clearBtoH" value="Clear" onclick="">
+              <br>
+            </div>
+          </td>
+        </tr>
+          <td>
+            <label for="Hex1">Hexadecimal:</label>
+          </td>
+          <td>
+            <input type="text" name="Hex1" id="Bin-hex1" value="">
+          </td>
+        </tr>
+       </table>
+     </div>
     <div id="Binary-Octal" class="Binary-Octal converter">
-      <label for="Bin2">Binary:</label>
-      <input type="text" name="Bin2" id="Bin-oct" value="">
-      <br>
-
-      <div class="converter-buttons">
-        <input type="button" id="swapBtoO" value="Swap" onclick="">
-        <input type="button" id="convertBtoO" value="Convert" onclick="">
-        <input type="button" id="clearBtoO" value="Clear" onclick="">
-        <br>
-      </div>
-
-      <label for="Oct1">Octal:</label>
-      <input type="text" name="Oct1" id="Bin-oct1" value="">
-    </div>
+      <table>
+        <tr>
+          <td>
+            <label for="Bin2">Binary:</label>
+          </td>
+          <td>
+            <input type="text" name="Bin2" id="Bin-oct" value="">
+             <br>
+          </td>
+        </tr>
+        <tr>
+          <p id="error" class="error"> </p>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="converter-buttons">
+              <input type="button" id="swapBtoO" value="Swap" onclick="">
+              <input type="button" id="convertBtoO" value="Convert" onclick="">
+              <input type="button" id="clearBtoO" value="Clear" onclick="">
+              <br>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Oct1">Octal:</label>
+          </td>
+          <td>
+            <input type="text" name="Oct1" id="Bin-oct1" value="">
+          </td>
+        </tr>
+       </table>
+       </div>
     <div id="Octal-Hexadecimal" class="Octal-Hexadecimal converter">
-      <label for="Oct2">Octal:</label>
-      <input type="text" name="Oct2" id="oct-hex" value="">
-      <br>
-
-      <div class="converter-buttons">
-        <input type="button" id="swapOtoH" value="Swap" onclick="">
-        <input type="button" id="convertOtoH" value="Convert" onclick="">
-        <input type="button" id="clearOtoH" value="Clear" onclick="">
-        <br>
+      <table>
+        <tr>
+          <td>
+            <label for="Oct2">Octal:</label>
+          </td>
+          <td>
+            <input type="text" name="Oct2" id="oct-hex" value="">
+            <br>
+          </td>
+        </tr>
+        <tr>
+          <p id="error" class="error"> </p>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="converter-buttons">
+              <input type="button" id="swapOtoH" value="Swap" onclick="">
+              <input type="button" id="convertOtoH" value="Convert" onclick="">
+              <input type="button" id="clearOtoH" value="Clear" onclick="">
+              <br>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Hex2">Hexadecimal:</label>
+          </td>
+          <td>
+            <input type="text" name="Hex2" id="oct-hex1" value="">
+          </td>
+        </tr>
+        </table>
       </div>
-
-      <label for="Hex2">Hexadecimal:</label>
-      <input type="text" name="Hex2" id="oct-hex1" value="">
-    </div>
   </section>
   <section class="aboutus" id="aboutus">
     <h1> About Us</h1>
