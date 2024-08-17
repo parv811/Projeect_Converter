@@ -1,7 +1,14 @@
 const swiper = new Swiper('.slider-wrapper', {
    
     loop: true,
+    centeredSlides: true,
   
+    coverflowEffect: {
+      slideShadows: true,
+    },
+
+
+
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
@@ -17,7 +24,7 @@ const swiper = new Swiper('.slider-wrapper', {
     breakpoints: {
 
       0: {
-        slidesPerView: 2
+        slidesPerView: 3
       },
 
       
@@ -26,12 +33,11 @@ const swiper = new Swiper('.slider-wrapper', {
       },
 
       1024: {
-        slidesPerView: 3
+        slidesPerView: 5
       }
-
 
     }
 
-
+    
    
   });
