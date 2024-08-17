@@ -47,7 +47,7 @@
       <table>
         <tr>
           <td>
-            <label for="Dec">Decimal:</label>
+            <label id="Dec">Decimal:</label>
           </td>
           <td>
             <input type="text" name="Dec" id="Dec-Bin" value="">
@@ -61,7 +61,7 @@
           <td colspan="2">
             <div class="converter-buttons">
               <input type="button" id="swapDtoB" value="Swap" onclick="">
-              <input type="button" id="convertDtoB" value="Convert" onclick="">
+              <input type="button" id="convertDtoB" value="Convert" onclick="convert1()">
               <input type="button" id="clearDtoB" value="Clear" onclick="">
               <br>
             </div>
@@ -69,10 +69,10 @@
         </tr>
           <tr>
             <td>
-              <label for="Bin">Binary:</label>
+              <label id="Bin">Binary:</label>
             </td>
             <td>
-              <input type="text" name="Bin" id="Dec-Bin1" value="">
+              <input type="text" name="Bin" id="Dec-Bin1" value="" readonly>
             </td>
           </tr>
        </table>
@@ -83,7 +83,7 @@
       <table>
         <tr>
           <td>
-            <label for="Dec1">Decimal:</label>
+            <label id="Dec1">Decimal:</label>
           </td>
           <td>
             <input type="text" name="Dec1" id="Dec-hex" value="">
@@ -105,10 +105,10 @@
         </tr>
         <tr>
           <td>
-            <label for="Hex">Hexadecimal:</label>
+            <label id="Hex">Hexadecimal:</label>
           </td>
           <td>
-            <input type="text" name="Hex" id="Dec-hex1" value="">
+            <input type="text" name="Hex" id="Dec-hex1" value="" readonly>
           </td>
         </tr>
       </table>
@@ -119,7 +119,7 @@
       <table>
         <tr>
          <td>
-          <label for="Dec2">Decimal:</label>
+          <label id="Dec2">Decimal:</label>
          </td> 
          <td>
           <input type="text" name="Dec2" id="Dec-oct" value="">
@@ -141,10 +141,10 @@
         </tr>
         <tr>
           <td>
-            <label for="Oct">Octal:</label>
+            <label id="Oct">Octal:</label>
           </td>
           <td>
-            <input type="text" name="Oct" id="Dec-oct1" value="">
+            <input type="text" name="Oct" id="Dec-oct1" value="" readonly>
           </td>
         </tr>
         </table>
@@ -154,7 +154,7 @@
       <table>
         <tr>
           <td>
-            <label for="Bin1">Binary:</label>
+            <label id="Bin1">Binary:</label>
           </td>
           <td>
             <input type="text" name="Bin1" id="Bin-hex" value="">
@@ -174,11 +174,12 @@
             </div>
           </td>
         </tr>
+        <tr>
           <td>
-            <label for="Hex1">Hexadecimal:</label>
+            <label id="Hex1">Hexadecimal:</label>
           </td>
           <td>
-            <input type="text" name="Hex1" id="Bin-hex1" value="">
+            <input type="text" name="Hex1" id="Bin-hex1" value="" readonly>
           </td>
         </tr>
        </table>
@@ -187,7 +188,7 @@
       <table>
         <tr>
           <td>
-            <label for="Bin2">Binary:</label>
+            <label id="Bin2">Binary:</label>
           </td>
           <td>
             <input type="text" name="Bin2" id="Bin-oct" value="">
@@ -209,10 +210,10 @@
         </tr>
         <tr>
           <td>
-            <label for="Oct1">Octal:</label>
+            <label id="Oct1">Octal:</label>
           </td>
           <td>
-            <input type="text" name="Oct1" id="Bin-oct1" value="">
+            <input type="text" name="Oct1" id="Bin-oct1" value="" readonly>
           </td>
         </tr>
        </table>
@@ -221,7 +222,7 @@
       <table>
         <tr>
           <td>
-            <label for="Oct2">Octal:</label>
+            <label id="Oct2">Octal:</label>
           </td>
           <td>
             <input type="text" name="Oct2" id="oct-hex" value="">
@@ -243,10 +244,10 @@
         </tr>
         <tr>
           <td>
-            <label for="Hex2">Hexadecimal:</label>
+            <label id="Hex2">Hexadecimal:</label>
           </td>
           <td>
-            <input type="text" name="Hex2" id="oct-hex1" value="">
+            <input type="text" name="Hex2" id="oct-hex1" value="" readonly>
           </td>
         </tr>
         </table>
