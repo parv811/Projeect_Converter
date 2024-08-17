@@ -140,8 +140,7 @@ function convert1() {
         let decimal = 0;
 
         //Seperate integer part and mantissa part
-        let integer = Math.floor(binary);
-        let mantissa = binary - integer;
+        let integer = Math.floor(Number(binary));
 
         //Conversion Logic - Integer Part
         let multiplier = 1;
