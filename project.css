@@ -229,18 +229,19 @@ td{
 
 /* For Slider */
 
-
 .card-list .card-item{
+    
     color: var(--fontcolorbluish);
-    width: 150px;
-    height: 135px;
+    width: 300px;
+    height: 150px;
     padding: 35px;
-    display: flex;
+    display:flex;
     flex-direction: column;
+    
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    margin: 15px;
+    margin: 35px;
     background: var(--bgcolorwhite);
     box-shadow: 3px 3px 5px 5px var(--boxshadowcolorfadeblack);
     transition: transform 0.5s ease, width 0.4s ease, height 0.4s ease;
@@ -253,8 +254,8 @@ td{
     box-shadow: 3px 3px 5px 5px var(--boxshadowcolorfadeblack);
 }
 
-
-
+  
+  
 
 /* CSS for Footer */
 
