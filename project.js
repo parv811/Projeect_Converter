@@ -50,11 +50,11 @@ themeButton.addEventListener('click', () => {
     if (themeButtonState == 0) {
         root.style.setProperty('--fontcolorblack', 'white');
         root.style.setProperty('--fontcolorwhite', 'black');
-        root.style.setProperty('--fontcolorbluish', 'grey');
+        root.style.setProperty('--fontcolorbluish', '#eeeeee');
         root.style.setProperty('--bgcolorwhite', 'black');
-        root.style.setProperty('--bgcolorbluish', 'grey');
+        root.style.setProperty('--bgcolorbluish', '#eeeeee');
         root.style.setProperty('--bgcolorf0f0f0', '#CBC8C8');
-        root.style.setProperty('--bgcolorf9f9f9', '#090909');
+        root.style.setProperty('--bgcolorf9f9f9', 'black');
         root.style.setProperty('--bordercolorwhite', 'black');
         root.style.setProperty('--boxshadowcolorreddish', 'rgba(254, 218, 241, 0.8)');
         root.style.setProperty('--boxshadowcolorblack', 'rgba(255, 255, 255, 0.3)');
@@ -66,11 +66,11 @@ themeButton.addEventListener('click', () => {
     else {
         root.style.setProperty('--fontcolorblack', 'black');
         root.style.setProperty('--fontcolorwhite', 'white');
-        root.style.setProperty('--fontcolorbluish', 'lightsteelblue');
+        root.style.setProperty('--fontcolorbluish', '#487aba');
         root.style.setProperty('--bgcolorwhite', 'white');
-        root.style.setProperty('--bgcolorbluish', 'lightsteelblue');
+        root.style.setProperty('--bgcolorbluish', '#487aba');
         root.style.setProperty('--bgcolorf0f0f0', '#f0f0f0');
-        root.style.setProperty('--bgcolorf9f9f9', '#f9f9f9');
+        root.style.setProperty('--bgcolorf9f9f9', 'white');
         root.style.setProperty('--bordercolorwhite', 'white');
         root.style.setProperty('--boxshadowcolorreddish', 'rgba(255, 0, 0, 0.1)');
         root.style.setProperty('--boxshadowcolorblack', 'rgba(0, 0, 0, 0.3)');

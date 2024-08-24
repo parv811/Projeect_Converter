@@ -5,11 +5,11 @@
 :root {
     --fontcolorblack: black;
     --fontcolorwhite: white;
-    --fontcolorbluish: lightsteelblue;
+    --fontcolorbluish: #487aba;
     --bgcolorwhite: white;
-    --bgcolorbluish: lightsteelblue;
+    --bgcolorbluish: #487aba;
     --bgcolorf0f0f0: #f0f0f0;
-    --bgcolorf9f9f9: #f9f9f9;
+    --bgcolorf9f9f9: white;
     --bgcolor090909: #090909;
     --bordercolorwhite: white;
     --boxshadowcolorblack: rgba(0, 0, 0, 0.3);
@@ -18,13 +18,18 @@
     --boxshadowcolorreddish: rgba(255, 0, 0, 0.1);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
 /*CSS for header and overall document*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat",sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 label {
@@ -35,7 +40,7 @@ body {
     min-height: 100vh;
     background-color: var(--bgcolorwhite);
     
-
+    
 }   
 
 nav {
@@ -111,9 +116,6 @@ header>h1 {
     border-radius: 50%;
     height: 40px;
     width: 40px;
-}
-
-.buttons>button {
     font-size: 20px;
 }
 
@@ -157,19 +159,25 @@ header>h1 {
 }
 
 .Main-block div.converter {
-    height: 200px;
+    height: 220px;
     width: 75vh;
     border-radius: 20px;
     background-color: var(--bgcolorf9f9f9);
     padding: 20px;
     margin: 20px;
-    box-shadow: 3px 3px 5px var(--boxshadowcolorfadeblack);
+    box-shadow: 3px 3px 5px 5px var(--boxshadowcolorfadeblack);
 }
 
 .Main-block div.converter:hover {
-    box-shadow: 3px 3px 5px var(--boxshadowcolorfadeblack) inset;
+    box-shadow: 3px 3px 5px 5px var(--boxshadowcolorfadeblack) inset;
 }
 
+td{
+    padding-bottom: 10px;   
+}
+.converter-buttons{
+    padding-bottom: 10px;
+}
 .Main-block>div input {
     color: var(--fontcolorwhite);
     font-size: 20px;
@@ -177,7 +185,7 @@ header>h1 {
     border-radius: 20px;
     padding: 4px 8px;
     background-color: var(--bgcolorbluish);
-    margin-bottom: 30px;
+    vertical-align: middle;
 }
 
 .Main-block>div input:hover {
@@ -214,18 +222,16 @@ header>h1 {
 .aboutus h1 {
     margin-left: 20px;
     font-size: 38px;
-    color: var(--fontcolorblack);
+    color: var(--fontcolorbluish);
+    text-align: center;
 }
 
-.aboutus h1:hover {
-    background-color: var(--bgcolorf0f0f0);
-}
 
 /* For Slider */
 
 
 .card-list .card-item{
-    color: black;
+    color: var(--fontcolorbluish);
     width: 150px;
     height: 135px;
     padding: 35px;
@@ -235,8 +241,8 @@ header>h1 {
     justify-content: center;
     border-radius: 8px;
     margin: 15px;
-    background: var(--bgcolorbluish);
-    border: 1px solid rgba(255,255,255,0.5);
+    background: var(--bgcolorwhite);
+    box-shadow: 3px 3px 5px 5px var(--boxshadowcolorfadeblack);
     transition: transform 0.5s ease, width 0.4s ease, height 0.4s ease;
     
 }
@@ -244,13 +250,9 @@ header>h1 {
 
 .slider-wrapper .swiper-slide-active{
     transform: scale(1.2);
-    box-shadow: 0 20px 30px 2px rgba(101, 103, 117, 0.6);
+    box-shadow: 3px 3px 5px 5px var(--boxshadowcolorfadeblack);
 }
 
-.card-list .card-item:hover{
-    
-    background: rgb(140, 159, 253);
-}
 
 
 
@@ -262,7 +264,7 @@ footer {
     text-align: center;
     font-size: 24px;
     background-color: var(--bgcolorbluish);
-    color: var(--fontcolorblack);
+    color: var(--fontcolorwhite);
     padding-bottom: 10px;
     padding-top: 10px;
 }
