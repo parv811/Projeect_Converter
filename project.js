@@ -45,6 +45,10 @@ menuButton.addEventListener('click', () => {
     }
 })
 
+
+
+
+
 //To change the page theme to light or dark mode
 themeButton.addEventListener('click', () => {
     if (themeButtonState == 0) {

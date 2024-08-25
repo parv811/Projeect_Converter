@@ -107,6 +107,7 @@ nav a:hover {
 
 .buttons>button {
     margin-left: 10px;
+    
     padding: 1px 3px;
     color: var(--fontcolorbluish);
     background-color: var(--bgcolorwhite);
@@ -115,6 +116,7 @@ nav a:hover {
     height: 40px;
     width: 40px;
     font-size: 20px;
+    
 }
 
 .buttons>button:hover {
@@ -243,7 +245,7 @@ td{
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    margin: 35px;
+    margin: 5px;
     background: var(--bgcolorwhite);
     box-shadow: 3px 3px 5px 5px var(--boxshadowcolorfadeblack);
     transition: transform 0.5s ease, width 0.4s ease, height 0.4s ease;
@@ -252,8 +254,9 @@ td{
 
 
 .slider-wrapper .swiper-slide-active{
+    
     transform: scale(1.2);
-    box-shadow: 3px 3px 5px 5px var(--boxshadowcolorfadeblack);
+    box-shadow: 3px 3px 5px 5px var(--fontcolorbluish);
 }
 
   
