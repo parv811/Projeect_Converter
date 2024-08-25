@@ -19,32 +19,32 @@
 </head>
 
 <body>
-  <header class="header" id="header">
-    <h1>
-      <i class="fa-solid fa-calculator"></i>
-      Number Nexus
-    </h1>
+  <div class="header" id="header">
+    <div class="h1">            
+        <i class="fa-solid fa-calculator"></i>
+        Number Nexus
+    </div>
     <div class="buttons" id="buttons">
       <button id="themeButton" class="fa-regular fa-moon"></button>
       <button id="menuButton" class="fa-solid fa-bars" onclick="changeMenuIcon(this)"></button>
     </div>
-  </header>
+  </div>
   <nav class="menu" id="menu">
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="#Decimal-Binary">Decimal to Binary</a></li>
-      <li><a href="#Decimal-Hexadecimal">Decimal to Hexadecimal</a></li>
-      <li><a href="#Decimal-Octal">Decimal to Octal</a></li>
-      <li><a href="#Binary-Hexadecimal">Binary to Hexadecimal</a></li>
-      <li><a href="#Binary-Octal">Binary to Octal</a></li>
-      <li><a href="#Octal-Hexadecimal">Octal to Hexadecimal</a></li>
+      <li><a href="#Decimal-Binary">Decimal <i class="	fa fa-arrows-h" style="padding: 0 5px;"></i> Binary</a></li>
+      <li><a href="#Decimal-Hexadecimal">Decimal <i class="	fa fa-arrows-h" style="padding: 0 5px;"></i> Hexadecimal</a></li>
+      <li><a href="#Decimal-Octal">Decimal <i class="	fa fa-arrows-h" style="padding: 0 5px;"></i> Octal</a></li>
+      <li><a href="#Binary-Hexadecimal">Binary <i class="	fa fa-arrows-h" style="padding: 0 5px;"></i> Hexadecimal</a></li>
+      <li><a href="#Binary-Octal">Binary <i class="	fa fa-arrows-h" style="padding: 0 5px;"></i> Octal</a></li>
+      <li><a href="#Octal-Hexadecimal">Octal <i class="	fa fa-arrows-h" style="padding: 0 5px;"></i> Hexadecimal</a></li>
       <li><a href="#aboutus">About Us</a></li>
     </ul>
   </nav>
   <br><br><br><br><br>
   <section class="Main-block" id="Main-block">
     <div id="Decimal-Binary" class="Decimal-Binary converter">
-      <table>
+      <table class="converter-table">
         <tr>
           <td>
             <label id="Dec">Decimal:</label>
@@ -78,7 +78,7 @@
 
 
     <div id="Decimal-Hexadecimal" class="Decimal-Hexadecimal converter">
-      <table>
+      <table class="converter-table">
         <tr>
           <td>
             <label id="Dec1">Decimal:</label>
@@ -111,7 +111,7 @@
       </div>
 
     <div id="Decimal-Octal" class="Decimal-Octal converter">
-      <table>
+      <table class="converter-table">
         <tr>
          <td>
           <label id="Dec2">Decimal:</label>
@@ -144,7 +144,7 @@
      
     </div>
     <div id="Binary-Hexadecimal" class="Binary-Hexadecimal converter">
-      <table>
+      <table class="converter-table">
         <tr>
           <td>
             <label id="Bin1">Binary:</label>
@@ -176,7 +176,7 @@
        </table>
      </div>
     <div id="Binary-Octal" class="Binary-Octal converter">
-      <table>
+      <table class="converter-table">
         <tr>
           <td>
             <label id="Bin2">Binary:</label>
@@ -208,7 +208,7 @@
        </table>
        </div>
     <div id="Octal-Hexadecimal" class="Octal-Hexadecimal converter">
-      <table>
+      <table class="converter-table">
         <tr>
           <td>
             <label id="Oct2">Octal:</label>
