@@ -33,57 +33,77 @@ binaryInput.forEach(element => {
     element.setAttribute('maxlength', "20");
 })
 
-//To hide and display the menu
-menuButton.addEventListener('click', () => {
-    if (menuButtonState == 0) {
-        menu.style.display = "block";
-        menuButtonState = 1;
+// Menu functionality
+const menuBackdrop = document.getElementById('menuBackdrop');
+const body = document.body;
+
+const toggleMenu = () => {
+    const menu = document.getElementById('menu');
+    const menuButton = document.getElementById('menuButton');
+    
+    menu.classList.toggle('active');
+    menuBackdrop.classList.toggle('active');
+    menuButton.classList.toggle('fa-bars');
+    menuButton.classList.toggle('fa-xmark');
+    
+    // Prevent body scroll when menu is open
+    body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+};
+
+// Menu button click handler
+menuButton.addEventListener('click', toggleMenu);
+
+// Close menu when clicking outside
+menuBackdrop.addEventListener('click', toggleMenu);
+
+// Close menu when clicking on a menu item
+document.querySelectorAll('.menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        toggleMenu();
+        
+        // Remove active class from all links
+        document.querySelectorAll('.menu a').forEach(l => l.classList.remove('active'));
+        // Add active class to clicked link
+        link.classList.add('active');
+    });
+});
+
+// Handle escape key to close menu
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menu.classList.contains('active')) {
+        toggleMenu();
     }
-    else {
-        menu.style.display = "none";
-        menuButtonState = 0;
-    }
-})
+});
 
 
 
 
 
-//To change the page theme to light or dark mode
-themeButton.addEventListener('click', () => {
-    if (themeButtonState == 0) {
-        root.style.setProperty('--fontcolorblack', 'white');
-        root.style.setProperty('--fontcolorwhite', 'black');
-        root.style.setProperty('--fontcolorbluish', '#eeeeee');
-        root.style.setProperty('--bgcolorwhite', 'black');
-        root.style.setProperty('--bgcolorbluish', '#eeeeee');
-        root.style.setProperty('--bgcolorf0f0f0', '#CBC8C8');
-        root.style.setProperty('--bgcolorf9f9f9', 'black');
-        root.style.setProperty('--bordercolorwhite', 'black');
-        root.style.setProperty('--boxshadowcolorreddish', 'rgba(254, 218, 241, 0.8)');
-        root.style.setProperty('--boxshadowcolorblack', 'rgba(255, 255, 255, 0.3)');
-        root.style.setProperty('--boxshadowcolorfadeblack', 'rgba(255, 255, 255, 0.1)');
-
+//Theme toggle functionality with persistent state
+const setTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    
+    if (theme === 'dark') {
         themeButton.classList.replace('fa-moon', 'fa-sun');
         themeButtonState = 1;
-    }
-    else {
-        root.style.setProperty('--fontcolorblack', 'black');
-        root.style.setProperty('--fontcolorwhite', 'white');
-        root.style.setProperty('--fontcolorbluish', '#487aba');
-        root.style.setProperty('--bgcolorwhite', 'white');
-        root.style.setProperty('--bgcolorbluish', '#487aba');
-        root.style.setProperty('--bgcolorf0f0f0', '#f0f0f0');
-        root.style.setProperty('--bgcolorf9f9f9', 'white');
-        root.style.setProperty('--bordercolorwhite', 'white');
-        root.style.setProperty('--boxshadowcolorreddish', 'rgba(255, 0, 0, 0.1)');
-        root.style.setProperty('--boxshadowcolorblack', 'rgba(0, 0, 0, 0.3)');
-        root.style.setProperty('--boxshadowcolorfadeblack', 'rgba(0, 0, 0, 0.1)');
-
+    } else {
         themeButton.classList.replace('fa-sun', 'fa-moon');
         themeButtonState = 0;
     }
-})
+};
+
+//Initialize theme from localStorage
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+});
+
+//Theme toggle event listener
+themeButton.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+});
 
 //Clear Display Function
 clearButton.forEach((element, index) => {

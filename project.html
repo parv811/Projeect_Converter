@@ -25,21 +25,29 @@
         Number Nexus
     </div>
     <div class="buttons" id="buttons">
-      <button id="themeButton" class="fa-regular fa-moon"></button>
-      <button id="menuButton" class="fa-solid fa-bars" onclick="changeMenuIcon(this)"></button>
+      <button id="themeButton" class="fa-regular fa-moon" title="Toggle theme"></button>
+      <button id="menuButton" class="fa-solid fa-bars" title="Toggle menu"></button>
     </div>
   </div>
+  
+  <!-- Menu backdrop -->
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+  
+  <!-- Side Navigation Menu -->
   <nav class="menu" id="menu">
+    <div class="menu-header">
+      <i class="fa-solid fa-calculator"></i>
+      Number Nexus
+    </div>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li ><a href="#Decimal-Binary">Decimal <i class="	fa fa-arrows-h" style="padding: 0 5px;"></i> Binary</a></li>
-      
-      <li><a href="#Decimal-Hexadecimal">Decimal <i class="	fa fa-arrows-h" style="padding: 0 5px;"></i> Hexadecimal</a></li>
-      <li><a href="#Decimal-Octal">Decimal <i class="	fa fa-arrows-h" style="padding: 0 5px;"></i> Octal</a></li>
-      <li><a href="#Binary-Hexadecimal">Binary <i class="	fa fa-arrows-h" style="padding: 0 5px;"></i> Hexadecimal</a></li>
-      <li><a href="#Binary-Octal">Binary <i class="	fa fa-arrows-h" style="padding: 0 5px;"></i> Octal</a></li>
-      <li><a href="#Octal-Hexadecimal">Octal <i class="	fa fa-arrows-h" style="padding: 0 5px;"></i> Hexadecimal</a></li>
-      <li><a href="#aboutus">About Us</a></li>
+      <li><a href="#" class="active"><i class="fa-solid fa-home"></i> Home</a></li>
+      <li><a href="#Decimal-Binary"><i class="fa-solid fa-exchange-alt"></i> Decimal to Binary</a></li>
+      <li><a href="#Decimal-Hexadecimal"><i class="fa-solid fa-exchange-alt"></i> Decimal to Hex</a></li>
+      <li><a href="#Decimal-Octal"><i class="fa-solid fa-exchange-alt"></i> Decimal to Octal</a></li>
+      <li><a href="#Binary-Hexadecimal"><i class="fa-solid fa-exchange-alt"></i> Binary to Hex</a></li>
+      <li><a href="#Binary-Octal"><i class="fa-solid fa-exchange-alt"></i> Binary to Octal</a></li>
+      <li><a href="#Octal-Hexadecimal"><i class="fa-solid fa-exchange-alt"></i> Octal to Hex</a></li>
+      <li><a href="#aboutus"><i class="fa-solid fa-users"></i> About Us</a></li>
     </ul>
   </nav>
   <br><br><br><br><br>
